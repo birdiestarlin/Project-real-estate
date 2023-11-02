@@ -1,0 +1,182 @@
+section.main_2 {
+    margin: 0;
+    width: 100%;
+
+    div.wrapper_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: var(--width-main);
+        margin: 100px auto;
+        padding: 0;
+
+        div.main_text {
+            align-self: stretch;
+            text-align: center;
+            padding: 0 25%;
+            margin-bottom: 50px;
+        }
+
+        ul {
+            display: flex;
+
+            li.block_1,
+            li.block_2,
+            li.block_3 {
+                display: block;
+                border-radius: 16px;
+                margin-right: 20px;
+                transition: .3s;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 30px 20px;
+
+                    li {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+
+                    li:last-child {
+                        color: var(--color-span);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px;
+                    }
+                }
+            }
+
+            li.block_1:hover, li.block_2:hover, li.block_3:hover {
+                background-color: #025595;
+            }
+
+            li.block_1:hover ul li, li.block_2:hover ul li, li.block_3:hover ul li {
+                color: #fff;
+            }
+
+            li.block_1:hover ul li svg g path, li.block_2:hover ul li svg g path, li.block_3:hover ul li svg g path {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:400px) {
+    section.main_2 {
+    
+        div.wrapper_2 {
+            margin: 80px auto;
+    
+            div.main_text {
+                align-self: center;
+                text-align: center;
+                padding: 0 15%;
+                margin-bottom: 30px;
+            }
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                li.block_1,
+                li.block_2,
+                li.block_3 {
+                    display: block;
+                    width: 70%;
+                    margin: 0 auto;
+    
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        padding: 20px 0;
+    
+                        li {
+                            font-size: 16px;
+                            font-weight: 700;
+                            padding: 10px;
+                            text-align: center;
+                        }
+    
+                        li:last-child {
+                            display: none;
+                        }
+                    }
+                }
+
+                li.block_1:hover, li.block_2:hover, li.block_3:hover {
+                    background-color: #025595;
+                }
+    
+                li.block_1:hover ul li, li.block_2:hover ul li, li.block_3:hover ul li {
+                    color: #fff;
+                }
+    
+                li.block_1:hover ul li svg g path, li.block_2:hover ul li svg g path, li.block_3:hover ul li svg g path {
+                    fill: #fff;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:400px) {
+    section.main_2 {
+    
+        div.wrapper_2 {
+            margin: 80px auto;
+    
+            div.main_text {
+                padding: 0 5%;
+                margin-bottom: 20px;
+            }
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                li.block_1,
+                li.block_2,
+                li.block_3 {
+                    display: block;
+                    width: 80%;
+                    margin: 0 auto;
+    
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        padding: 20px 0;
+    
+                        li {
+                            font-size: 16px;
+                            font-weight: 700;
+                            padding: 10px;
+                            text-align: center;
+                        }
+    
+                        li:last-child {
+                            display: none;
+                        }
+                    }
+                }
+
+                li.block_1:hover, li.block_2:hover, li.block_3:hover {
+                    background-color: #025595;
+                }
+    
+                li.block_1:hover ul li, li.block_2:hover ul li, li.block_3:hover ul li {
+                    color: #fff;
+                }
+    
+                li.block_1:hover ul li svg g path, li.block_2:hover ul li svg g path, li.block_3:hover ul li svg g path {
+                    fill: #fff;
+                }
+            }
+        }
+    }    
+}
