@@ -1,0 +1,240 @@
+nav.footer_nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    height: fit-content;
+    width: var(--width-main);
+    margin: 100px auto 50px;
+    gap: 10%;
+    font-weight: 400;
+
+    ul.flora {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 25%;
+
+        li {
+        color: var(--color-gray);
+        font-weight: 400;
+        line-height: 28px;
+        }
+    }
+
+    ul.service {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul.about {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul.our_location {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        ul.social {
+            display: flex;
+            gap: 10px;
+
+            li {
+                div {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: var(--bg-button);
+                    cursor: pointer;
+                }
+
+                div.facebook {
+                    background-image: url(/assets/icons/facebook-fill.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 60%;
+                }
+
+                div.twitter {
+                    background-image: url(/assets/icons/twitter-fill.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 60%;
+                }
+
+                div.linkedin {
+                    background-image: url(/assets/icons/in-fill.svg);
+                    background-position: 50% 40%;
+                    background-repeat: no-repeat;
+                    background-size: 50%;
+                }
+            }
+
+            li div:hover {
+                background-color: var(--bg-button-hover);
+            }
+        }
+    }
+}
+
+hr {
+    width: var(--width-main);
+    background-color: rgb(213, 213, 213);
+    border: .5px solid rgb(213, 213, 213);
+    margin: 0 auto;
+}
+
+ul.copy {
+    width: var(--width-main);
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+
+    li ul {
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width: 500px) {
+    nav.footer_nav {
+        margin: 80px auto 50px;
+        gap: 10%;
+    
+        ul.flora {
+            width: 10%;
+    
+            li:last-child {
+            display: none;
+            }
+        }
+    
+        ul.service {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                h3 {
+                    font-size: 12px;
+                }
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    
+        ul.about {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                h3 {
+                    font-size: 12px;
+                }
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    
+        ul.our_location {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+
+                font-size: 12px;
+
+                h3 {
+                    font-size: 12px;
+                }
+            }
+    
+            ul.social {
+    
+                li {
+                    div {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+    ul.copy { 
+        li {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav.footer_nav {
+        margin: 40px auto 50px;
+        gap: 70px;
+    
+        ul.flora {
+            width: 10%;
+    
+            li:last-child {
+            display: none;
+            }
+        }
+    
+        ul.service {
+            display: none;
+        }
+    
+        ul.about {
+            display: none;
+        }
+    
+        ul.our_location {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+
+                font-size: 12px;
+
+                h3 {
+                    font-size: 12px;
+                }
+            }
+    
+            ul.social {
+    
+                li {
+                    div {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+    ul.copy { 
+        justify-content: center;
+
+        li {
+            font-size: 12px;
+        }
+
+        li:last-child {
+            display: none;
+        }
+    }
+}
