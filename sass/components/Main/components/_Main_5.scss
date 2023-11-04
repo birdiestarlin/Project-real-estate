@@ -96,20 +96,20 @@ section.main_5 {
                                 }
             
                                 div.customer_2 {
-                                    background-image: url(/assets/images/customer_2.png);
+                                    background-image: url(../assets/images/customer_2.png);
                                     background-size: cover;
                                     background-position: 0 30%;
                                     background-repeat: no-repeat;
                                 }
             
                                 div.customer_3 {
-                                    background-image: url(/assets/images/customer_3.png);
+                                    background-image: url(../assets/images/customer_3.png);
                                     background-size: cover;
                                     background-repeat: no-repeat;
                                 }
         
                                 div.customer_4 {
-                                    background-image: url(/assets/images/customer_4.png);
+                                    background-image: url(../assets/images/customer_4.png);
                                     background-size: cover;
                                     background-position: 0 40%;
                                     background-repeat: no-repeat;
@@ -125,7 +125,7 @@ section.main_5 {
                 width: 100%;
                 height: 100%;
                 border-radius: var(--border-radius);
-                background-image: url(/assets/images/customer_1.png);
+                background-image: url(../assets/images/customer_1.png);
                 background-size: cover;
                 grid-column: 1/3;
                 grid-row: 1/7;
